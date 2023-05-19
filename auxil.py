@@ -8,6 +8,7 @@ import tkinter as tk
 from tkinter import messagebox
 import time
 import matplotlib.pyplot as plt
+from collections import Counter
 
 def drawBoard(fig1, im, state):
     white = Image.open("whiteChecker.png")

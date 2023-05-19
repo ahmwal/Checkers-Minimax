@@ -104,7 +104,7 @@ def main():
         for i in range(3):
             checkWindow(fig1)
             time.sleep(1)
-    
+        
     if (w == "B"):
         ax.set_title("Black wins!")
     else:

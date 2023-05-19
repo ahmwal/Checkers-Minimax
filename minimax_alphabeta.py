@@ -15,7 +15,7 @@ def minimax(state, max, alpha, beta, currentDepth, maxdepth):
         bestValue = -math.inf
         moveValue = 0
         bestMove = []
-        for m in possibleMoves:                  
+        for m in possibleMoves:      
             moveValue, _ = minimax(m, "W", alpha, beta, currentDepth+1, maxdepth)
             if (moveValue >= bestValue):
                 bestValue = moveValue
@@ -33,7 +33,7 @@ def minimax(state, max, alpha, beta, currentDepth, maxdepth):
         bestValue = math.inf
         moveValue = 0
         bestMove = []
-        for mv in possibleMoves:                
+        for mv in possibleMoves:
             moveValue, _ = minimax(mv, "B", alpha, beta, currentDepth+1, maxdepth)
             if (moveValue <= bestValue):
                 bestValue = moveValue
